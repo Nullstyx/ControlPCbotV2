@@ -1,67 +1,43 @@
 # ControlPCbotV2
 
-ControlPCbotV2 - это телеграм-бот для удаленного управления вашим компьютером. С его помощью вы можете выполнять различные задачи на удаленном ПК прямо из Telegram.
+This is a script for remote control of your PC via a Telegram bot.
 
-## Основные возможности
+## Features and Capabilities
 
-- ⚡ **Управление питанием**: Выключение, перезагрузка компьютера
-- 📸 **Скриншоты**: Создание и отправка скриншотов экрана
-- 📁 **Файловый менеджер**: Полноценный файловый менеджер с архивацией папок
-- 🛑 **Управление процессами**: Просмотр и завершение работающих процессов
-- 🔊 **Управление громкостью**: Регулировка громкости системы
-- ⌨️ **Эмуляция клавиатуры**: Ввод текста и специальные сочетания клавиш
-- 🖱 **Эмуляция мыши**: Полное управление мышью и кликами
-- 🔒 **Блокировка системы**: Быстрая блокировка рабочей станции
-- 💻 **CMD команды**: Выполнение команд с получением результата
-- 📝 **Логирование**: Ведение журнала всех выполненных команд
-- 🚀 **Автозапуск**: Автоматический запуск бота при старте системы
+- ⚡ **Power management**: Shutdown and restart your computer
+- 📸 **Screenshots**: Capture and send screenshots of your screen
+- 📁 **File manager**: Full-featured file manager with folder archiving
+- 🛑 **Process management**: View and terminate running processes
+- 🔊 **Volume control**: Adjust system volume
+- ⌨️ **Keyboard emulation**: Enter text and special key combinations
+- 🖱 **Mouse emulation**: Full mouse control and clicking
+- 🔒 **System lock**: Quickly lock your workstation
+- 💻 **CMD commands**: Execute commands and receive results
+- 📝 **Logging**: Keep a log of all executed commands
+- 🚀 **Autorun**: Automatically start the bot when the system boots
 
-## Установка и настройка
+## Setup and Launch
 
-### Требования
+### Requirements
 - Python 3.10
 - Windows 7/8/10/11
-- Telegram
 
-### Инструкция по установке
+### Installation Instructions
 
-1. Скачать репозиторий
-2. Заполнить config.py
-3. Изменить Start.bat
-4. Откройте папку в командной строке и введите следующие команды:
+1. Clone the repository and edit `config.py` and `start.bat` as needed.
+2. Install the dependencies:
 ```
 pip install -r requirements.txt
+```
+3. Launch the bot:
+```
 python main.py
 ```
-6. Зайти в чат с ботом и прописать /autorun
+It is recommended to enable autorun via `/autorun`.
 
-### Основные команды:
-- `/menu` - Показать главное меню управления
-- `/cmd [команда]` - Выполнить команду в CMD (например: /cmd ipconfig)
+### Commands:
+- `/menu` - Show the main control menu
+- `/cmd [command]` - Execute a command in CMD (for example: /cmd ipconfig)
 
-### Главное меню:
-- 🖥️ **Выключить ПК** - Завершение работы
-- 🔄 **Перезагрузить ПК** - Перезагрузка системы
-- 📸 **Скриншот** - Отправка скриншота экрана в чат
-- 📁 **Управление файлами** - Файловый менеджер с возможностью скачивания файлов в чат с ботом
-- ❌ **Завершить процесс** - Просмотр и завершение процессов
-- 🔊 **Управление громкостью** - Регулировка системной громкости
-- ⌨️ **Эмуляция клавиш** - Ввод текста и управление клавиатурой
-- 🖱 **Эмуляция мыши** - Управление курсором и кнопками мыши
-- 🔒 **Блокировка экрана** - Быстрая блокировка через Win+L
-- ✅ **Автозапуск** - Включение/выключение автозагрузки
-
-## Безопасность
-
-Бот разработан с учетом безопасности:
-- Отвечает только пользователю с указанным CHAT_ID
-- Все команды логируются в файл command_log.txt
-- Подтверждение опасных операций (выключение, завершение процессов)
-- Пароли и чувствительная информация не передаются
-
-## Лицензия
-
-Проект распространяется под лицензией MIT. Подробнее см. в файле [LICENSE](LICENSE).
-
-
-Автор: https://github.com/MrachniyTipchek
+## New Version
+A new version with a more user-friendly interface and a ready-to-use .exe application is available in the ControlPCbotV3 branch. However, it is not yet finished, and I do not plan to continue its development.
