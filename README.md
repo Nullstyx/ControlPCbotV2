@@ -1,3 +1,5 @@
+> This project is no longer maintained. The repository is archived.
+
 # ControlPCbotV2
 
 This is a script for remote control of your PC via a Telegram bot.
