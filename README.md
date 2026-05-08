@@ -40,6 +40,3 @@ It is recommended to enable autorun via `/autorun`.
 ### Commands:
 - `/menu` - Show the main control menu
 - `/cmd [command]` - Execute a command in CMD (for example: /cmd ipconfig)
-
-## New Version
-A new version with a more user-friendly interface and a ready-to-use .exe application is available in the ControlPCbotV3 branch. However, it is not yet finished, and I do not plan to continue its development.
